@@ -20,6 +20,12 @@ namespace Lab_23_Coffee_Shop.Controllers
             return View(db.Items.ToList());
         }
 
+        // Get: Admin Items
+        public ActionResult IndexAdmin()
+        {
+            return View(db.Items.ToList());
+        }
+
         // GET: Items/Details/5
         public ActionResult Details(int? id)
         {
